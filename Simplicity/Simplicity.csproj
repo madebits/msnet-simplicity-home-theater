@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C13DECC1-F2DB-4CC7-A65E-71F4D488530A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simplicity</RootNamespace>
+    <AssemblyName>Simplicity</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Simplicity.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppItem.cs" />
+    <Compile Include="AutoStart.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="ExitWin.cs" />
+    <Compile Include="SControls\BrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SControls\BrowserControl.Designer.cs">
+      <DependentUpon>BrowserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DConfirm.Designer.cs">
+      <DependentUpon>DConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DInfo.Designer.cs">
+      <DependentUpon>DInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DInput.Designer.cs">
+      <DependentUpon>DInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DItemActivated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DItemActivated.Designer.cs">
+      <DependentUpon>DItemActivated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DPathDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DPathDetails.Designer.cs">
+      <DependentUpon>DPathDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DSound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DSound.Designer.cs">
+      <DependentUpon>DSound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\DWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SControls\DWins.Designer.cs">
+      <DependentUpon>DWins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchableName.cs" />
+    <Compile Include="SimpMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpMain.Designer.cs">
+      <DependentUpon>SimpMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SControls\FItemImageResolver.cs" />
+    <Compile Include="SControls\Icons.cs" />
+    <Compile Include="SControls\SListNavigation.cs" />
+    <Compile Include="StringLogicalComparer.cs" />
+    <Compile Include="SysInfo.cs" />
+    <EmbeddedResource Include="SControls\BrowserControl.resx">
+      <DependentUpon>BrowserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DConfirm.resx">
+      <DependentUpon>DConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DInfo.resx">
+      <DependentUpon>DInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DInput.resx">
+      <DependentUpon>DInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DItemActivated.resx">
+      <DependentUpon>DItemActivated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DPathDetails.resx">
+      <DependentUpon>DPathDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DSound.resx">
+      <DependentUpon>DSound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\DWins.resx">
+      <DependentUpon>DWins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpMain.resx">
+      <DependentUpon>SimpMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\SButton.resx">
+      <DependentUpon>SButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\SList.resx">
+      <DependentUpon>SList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControls\SListItem.resx">
+      <DependentUpon>SListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SControls\SButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SControls\SButton.Designer.cs">
+      <DependentUpon>SButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\SGraphics.cs" />
+    <Compile Include="SControls\SList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SControls\SList.Designer.cs">
+      <DependentUpon>SList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControls\SListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SControls\SListItem.Designer.cs">
+      <DependentUpon>SListItem.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="Cursor.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
