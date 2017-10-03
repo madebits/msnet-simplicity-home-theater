@@ -11,7 +11,7 @@ namespace Simplicity
     {
         public const string AppVersion = "1.0.0";
         public const string AppNameShort = "Simplicity Home Theater";
-        public const string AppUrl = "http://madebits.com";
+        public const string AppUrl = "";
         public const string AppName = AppNameShort + " " + AppVersion + " - " + AppUrl;
         public static Config Default = new Config();
         public List<AppItem> launchers = new List<AppItem>();

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MediaPreview")]
 [assembly: AssemblyDescription("MediaPreview")]
 [assembly: AssemblyConfiguration("MediaPreview")]
-[assembly: AssemblyCompany("http://madebits.com")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MediaPreview")]
-[assembly: AssemblyCopyright("http://madebits.com")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

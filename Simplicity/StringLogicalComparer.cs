@@ -1,5 +1,5 @@
 // (c) Vasian Cepa 2005
-// http://madebits.com
+// 
 
 using System;
 using System.Collections;

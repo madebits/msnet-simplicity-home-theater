@@ -13,7 +13,7 @@ namespace MediaPreview
         public static string ffmpeg = null;
         public static string movieFile = null;
         private static bool movieFileIsDir = false;
-        public static string APPNAME = "Media Preview 1.0.0 - http://madebits.com";
+        public static string APPNAME = "Media Preview 1.0.0 - ";
         public static bool fullScreen = false;
         public static int maxRows = 2;
         public static bool hasffmpeg = false;
